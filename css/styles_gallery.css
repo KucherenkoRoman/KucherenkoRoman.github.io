@@ -1,0 +1,99 @@
+body{
+    position: absolute;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/backgroud.jpg");
+    background-repeat: repeat; 
+}
+
+.main-container{
+    position: relative;
+    width: 80%;;
+    margin: 0px auto;
+    overflow: hidden;
+} 
+
+.headline{
+    width: 100%;
+    text-align: center;
+    font-family: Snell_Roundhand;
+    font-size: 180%;	
+}
+
+.photo-wall{
+    position: relative;
+    margin: 40px, auto;
+}
+
+.photo-wall ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+    background-image: linear-gradient(to right, #0d7283, #d8d7e9);
+    width: 12.6%;
+    height: 180px;
+    margin-right: 2%;
+    margin-bottom: 4%;
+    padding-right: 0.8%;
+    padding-left: 0.5%; 
+    padding-top: 0.5%;
+}
+ 
+.img-container img{
+    position: relative;
+    max-width: 100%;
+    max-height: 120px;
+    display: block;
+    margin: 0 auto; 
+    margin: 0, auto;
+    border: black 2px solid;
+}
+
+.img-container img:hover{
+    border: #2ecc71 2px solid;
+}
+
+.img-container p{
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 2px;
+    vertical-align: text-bottom;
+}
+
+@media only screen and (max-width: 940px), 
+only screen and (max-device-width: 940 px){
+    .photo-wall ul li{
+        width: 16%;
+        height: 150px;
+    }
+    .img-container img{
+        max-height: 90px;
+        
+    }
+    .img-container p{
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 720px), 
+only screen and (max-device-width: 720 px){
+    .photo-wall ul li{
+        width: 21%;
+        height: 130px;
+    }
+    .img-container img{
+        max-height: 80px;
+    }
+    .img-container p{
+        font-size: 60%;
+    }
+}
+
+@font-face {
+    font-family: Snell_Roundhand; 
+    src: url("../fonts/Snell_Roundhand.ttf"); 
+}
+
